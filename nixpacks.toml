@@ -1,0 +1,23 @@
+[phases.setup]
+# ติดตั้ง packages ที่จำเป็นสำหรับ n8n และ FFmpeg
+nixPkgs = [
+    'nodejs-18_x',
+    'ffmpeg',
+    'font-noto-emoji',
+    'fontconfig',
+    'bash'
+]
+
+[phases.install]
+# ติดตั้ง n8n
+cmds = [
+    "npm install -g n8n"
+]
+
+[start]
+# คำสั่งเริ่มต้น n8n
+cmd = "n8n"
+
+[variables]
+# Port ที่ n8n จะใช้
+PORT = "5678"
