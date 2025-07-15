@@ -3,7 +3,7 @@
 nixPkgs = [
     'nodejs-18_x',
     'ffmpeg',
-    'font-noto-emoji',
+    'noto-fonts-emoji',
     'fontconfig',
     'bash'
 ]
